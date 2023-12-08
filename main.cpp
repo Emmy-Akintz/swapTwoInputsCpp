@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int main () {
+int main()
+{
     int a;
     int b;
     cout << "Input your first value" << endl;
@@ -16,6 +17,23 @@ int main () {
     int temp = a;
     a = b;
     b = temp;
+
+    // a = a ^ b;
+    // b = a ^ b;
+    // a = a ^ b;
+
+    // if (a <= 0 || a >= 0 )
+    // {
+    //     a = b;
+    //     // cout << a;
+    // }
+    // else if (b <= 0 || b >= 0)
+    // {
+    //     b = a;
+    //     // cout << b;
+    // } 
+    // else
+    //     cout << "Your input is invalid. ";
 
     cout << "After swapping: a = " << a << ", b = " << b << "." << endl;
     return 0;
