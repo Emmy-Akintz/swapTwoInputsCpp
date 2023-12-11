@@ -14,9 +14,9 @@ int main()
     cin >> b;
     cout << "You second value (b) is " << b << endl;
 
-    int temp = a;
-    a = b;
-    b = temp;
+    // int temp = a;
+    // a = b;
+    // b = temp;
 
     // a = a ^ b;
     // b = a ^ b;
@@ -35,6 +35,14 @@ int main()
     // else
     //     cout << "Your input is invalid. ";
 
-    cout << "After swapping: a = " << a << ", b = " << b << "." << endl;
+    int *pointer_one = 0;
+    pointer_one = &b;
+    int *pointer_two = 0;
+    pointer_two = &a;
+    // a = *pointer_one;
+    // b = *pointer_two;
+    cout << "After swapping: a = " << *pointer_one << ", b = " << *pointer_two << "." << endl;
+
+    // cout << "After swapping: a = " << a << ", b = " << b << "." << endl;
     return 0;
 }
